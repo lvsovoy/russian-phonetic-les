@@ -41,7 +41,7 @@ Place .bundle in Mac Disk > Library > Keyboard Layouts folder
 If there are more than one phonetic layout, check the layout images and find the one that is the same as the ones in about page
 
 # INSTALLATION GUIDE - WINDOWS
-WINDOWS 8 – 10
+WINDOWS 8 – 10:
 Go to Settings > Time & language > Region & language.
 
 - Press Add a Language and select Русский
@@ -49,7 +49,7 @@ Go to Settings > Time & language > Region & language.
 - Press Add a Keyboard and select Russian – Phonetic – Les
  
 
-WINDOWS 7 AND OLDER
+WINDOWS 7 AND OLDER:
 Open Control Panel > Clock, Language, and Region > Region and Language.
 
 - Click the Keyboards and Languages tab, and then click Change keyboards
