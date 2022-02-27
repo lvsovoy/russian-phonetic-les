@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>russian-phonetic-les</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+
+        #main {
+            margin-left: 120px
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body class="w3-black">
+
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img src="img/ya.png" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-keyboard-o w3-xxlarge"></i>
+            <p>LAYOUT</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-download w3-xxlarge"></i>
+            <p>DOWNLOAD</p>
+        </a>
+    </nav>
+
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">LAYOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">DOWNLOAD</a>
+        </div>
+    </div>
+
+    <div class="w3-padding-large" id="main">
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo">russian-phonetic-les</h1>
+            <p>Consistent, cross-platform phonetic keyboard layout available for Windows and Mac OS</p>
+        </header>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">ABOUT</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>If you live in a country, where it’s hard to get your hand on a Cyrillic – labelled keyboard, the chances
+                are, that you have resorted to the horrible, horrible, disgusting transliteration. Either way you wished
+                there was a way to enter Cyrillic symbols with a keyboard, that does not contain the widespread ЙЦУКЕН
+                scribbles on the top row. And there is. Phonetic keyboard layouts are a way to enter Cyrillic letters as
+                if you were writing in transliterated text – with some exceptions.
+            </p>
+            <h3 class="w3-padding-16 w3-text-light-grey">WHY?</h3>
+            <p>There are already a lot of phonetic keyboard layouts out there, why create another? – you may ask. First
+                of all, it has been done for personal use. As I came to posession of a chromebook, a mac, and a windows
+                machine, all of which were plagued by the same problem of not having cyrillic letters written on the
+                keyboard, I decided to browse around for other methods of input and found one that suited me best in the
+                form of AATSEEL or Student layout, which was bundled with chrome os, but was nowhere to be found on mac
+                os/windows. I found some installers and bundles on AATSEEL website, but the key layout was different
+                from what I grew accustomed to on a chromebook. So, I took it as a base, and made my own layout packages
+                for mac and windows. Ta daa!</p>
+        </div>
+
+        <div class="w3-padding-64 w3-content" id="photos">
+            <h2 class="w3-text-light-grey">LAYOUT</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <p>The majority of the letters correspond to their counterparts by sound except for the following:</p>
+            <ul>
+                <li>q stands for я because it resembles it visually</li>
+                <li>h stands for ч because it resembles it visually</li>
+                <li>x stands for х because it looks the same</li>
+                <li>c stands for ц because in some Baltic languages such as Latvian the roman letter is pronounced that
+                    way
+                </li>
+            </ul>
+            <p>The rest of letters (ё,ю,щ,ь,ъ,ж,э) must be remembered. Still easier than to learn ЙЦУКЕН by heart.</p>
+
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="img/layout_lowercase.png"
+                        onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity"
+                        style="width:100%">
+                </div>
+
+                <div class="w3-half">
+                    <img src="img/layout_uppercase.png"
+                        onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity"
+                        style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">DOWNLOAD</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download on GitHub
+            </button>
+        </div>
+
+        <div id="modal01" class="w3-modal w3-animate-opacity" onclick="this.style.display='none'">
+            <img class="w3-modal-content w3-display-middle" src="img/layout_lowercase.png">
+        </div>
+
+        <div id="modal02" class="w3-modal w3-animate-opacity" onclick="this.style.display='none'">
+            <img class="w3-modal-content w3-display-middle" src="img/layout_uppercase.png">
+        </div>
+    </div>
+
+</body>
+
+</html>
