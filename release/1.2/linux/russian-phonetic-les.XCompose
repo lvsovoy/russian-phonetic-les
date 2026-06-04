@@ -1,0 +1,51 @@
+# ~/.XCompose — Dead diaeresis (¨) + Cyrillic combinations
+# for the "Russian - Phonetic - Les" XKB layout.
+#
+# How to use
+# ----------
+# Append this file to your ~/.XCompose (or create it if it doesn't exist):
+#
+#   cat russian-phonetic-les.XCompose >> ~/.XCompose
+#
+# Then restart your input method / log out and back in.
+#
+# Trigger: AltGr + ` (backtick) → dead_diaeresis, then type the base letter.
+#
+# These sequences reproduce the dead-key table read from Russian.dll (v3.40).
+# ──────────────────────────────────────────────────────────────────────────────
+
+# First, include the system-default sequences so nothing is lost.
+include "%L"
+
+# ── Dead diaeresis + Cyrillic (lowercase) ─────────────────────────────────────
+<dead_diaeresis> <Cyrillic_be>      : "ъ"   Cyrillic_hardsign     # б → ъ
+<dead_diaeresis> <Cyrillic_tse>     : "ч"   Cyrillic_che          # ц → ч
+<dead_diaeresis> <Cyrillic_ze>      : "ж"   Cyrillic_zhe          # з → ж
+<dead_diaeresis> <Cyrillic_a>       : "э"   Cyrillic_e            # а → э
+<dead_diaeresis> <Cyrillic_ghe>     : "ѓ"   U0453                 # г → ѓ (U+0453)
+<dead_diaeresis> <Cyrillic_es>      : "ш"   Cyrillic_sha          # с → ш
+<dead_diaeresis> <Cyrillic_sha>     : "щ"   Cyrillic_shcha        # ш → щ
+<dead_diaeresis> <Cyrillic_ie>      : "ё"   Cyrillic_yo           # е → ё
+<dead_diaeresis> <Cyrillic_u>       : "ю"   Cyrillic_yu           # у → ю
+<dead_diaeresis> <Cyrillic_i>       : "ї"   U0457                 # и → ї (U+0457)
+<dead_diaeresis> <Cyrillic_yeru>    : "ў"   U045E                 # ы → ў (U+045E)
+<dead_diaeresis> <Cyrillic_o>       : "ё"   Cyrillic_yo           # о → ё
+
+# ── Dead diaeresis + Cyrillic (uppercase) ─────────────────────────────────────
+<dead_diaeresis> <Cyrillic_BE>      : "Ъ"   Cyrillic_HARDSIGN     # Б → Ъ
+<dead_diaeresis> <Cyrillic_TSE>     : "Ч"   Cyrillic_CHE          # Ц → Ч
+<dead_diaeresis> <Cyrillic_ZE>      : "Ж"   Cyrillic_ZHE          # З → Ж
+<dead_diaeresis> <Cyrillic_A>       : "Э"   Cyrillic_E            # А → Э
+<dead_diaeresis> <Cyrillic_GHE>     : "Ѓ"   U0403                 # Г → Ѓ (U+0403)
+<dead_diaeresis> <Cyrillic_ES>      : "Ш"   Cyrillic_SHA          # С → Ш
+<dead_diaeresis> <Cyrillic_SHA>     : "Щ"   Cyrillic_SHCHA        # Ш → Щ
+<dead_diaeresis> <Cyrillic_IE>      : "Ё"   Cyrillic_IO           # Е → Ё
+<dead_diaeresis> <Cyrillic_U>       : "Ю"   Cyrillic_YU           # У → Ю
+<dead_diaeresis> <Cyrillic_I>       : "Ї"   U0407                 # И → Ї (U+0407)
+<dead_diaeresis> <Cyrillic_YERU>    : "Ў"   U040E                 # Ы → Ў (U+040E)
+<dead_diaeresis> <Cyrillic_O>       : "Ё"   Cyrillic_IO           # О → Ё
+
+# ── Dead diaeresis self-combinations ──────────────────────────────────────────
+<dead_diaeresis> <dead_diaeresis>   : "`"   grave                 # ¨ + ¨ → `
+<dead_diaeresis> <space>            : "¨"   diaeresis             # ¨ + Space → ¨
+
