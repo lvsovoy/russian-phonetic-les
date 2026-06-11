@@ -49,7 +49,7 @@ xkb_symbols "les" {
 
     // ── Tilde / backtick row ─────────────────────────────────────────────────
     // Base: ё   Shift: Ё   AltGr: dead_diaeresis
-    key <TLDE> { [ Cyrillic_yo,       Cyrillic_IO,        dead_diaeresis   ] };
+    key <TLDE> { [ Cyrillic_io,       Cyrillic_IO,        dead_diaeresis   ] };
 
     // ── Number row ──────────────────────────────────────────────────────────
     key <AE01> { [ 1,                 exclam                               ] };

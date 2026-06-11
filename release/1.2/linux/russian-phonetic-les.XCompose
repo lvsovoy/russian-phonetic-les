@@ -25,11 +25,11 @@ include "%L"
 <dead_diaeresis> <Cyrillic_ghe>     : "ѓ"   U0453                 # г → ѓ (U+0453)
 <dead_diaeresis> <Cyrillic_es>      : "ш"   Cyrillic_sha          # с → ш
 <dead_diaeresis> <Cyrillic_sha>     : "щ"   Cyrillic_shcha        # ш → щ
-<dead_diaeresis> <Cyrillic_ie>      : "ё"   Cyrillic_yo           # е → ё
+<dead_diaeresis> <Cyrillic_ie>      : "ё"   Cyrillic_io           # е → ё
 <dead_diaeresis> <Cyrillic_u>       : "ю"   Cyrillic_yu           # у → ю
 <dead_diaeresis> <Cyrillic_i>       : "ї"   U0457                 # и → ї (U+0457)
 <dead_diaeresis> <Cyrillic_yeru>    : "ў"   U045E                 # ы → ў (U+045E)
-<dead_diaeresis> <Cyrillic_o>       : "ё"   Cyrillic_yo           # о → ё
+<dead_diaeresis> <Cyrillic_o>       : "ё"   Cyrillic_io           # о → ё
 
 # ── Dead diaeresis + Cyrillic (uppercase) ─────────────────────────────────────
 <dead_diaeresis> <Cyrillic_BE>      : "Ъ"   Cyrillic_HARDSIGN     # Б → Ъ
